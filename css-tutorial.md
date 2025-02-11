@@ -393,8 +393,9 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
-``````css
+[วางโค้ด HTML ที่นี่]
+```
+```css
 [วางโค้ด CSS ที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
@@ -684,12 +685,109 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 9 กุมภาพันธ์ 2025 | โดย ปรียาภรณ์ นาคสมบูรณ์</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+.blog-post {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.8;
+    color: #333;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.post-title {
+    font-size: 2.8rem;
+    color: #d63384; 
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.post-meta {
+    color: #555;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #444;
+    text-align: justify;
+}
+
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+    font-size: 2rem;
+    color: #007bff; 
+    margin: 2rem 0 1rem;
+    font-weight: bold;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #ff9800; 
+    margin: 2rem 0;
+    padding-left: 1rem;
+    color: #555;
+    background: rgba(255, 152, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2.2rem;
+    }
+
+    .post-content {
+        font-size: 1rem;
+    }
+}
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![image](https://github.com/user-attachments/assets/ce4f8b62-8d73-450b-af75-23cc20f6cc63)
+]
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
