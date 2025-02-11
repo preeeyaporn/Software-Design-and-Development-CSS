@@ -1069,105 +1069,116 @@ blockquote {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/aa.png')"></div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 1</h3>
+                <div class="product-price">฿1,299</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/bb.png')"></div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 2</h3>
+                <div class="product-price">฿1,499</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- เพิ่มสินค้าอื่นๆ ตามต้องการ -->
+    </div>
+</body>
+</html>
 ```
 ```css
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ปรับขนาดให้เล็กลง */
+    gap: 15px; /* ปรับระยะห่างระหว่างสินค้า */
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px; /* ปรับขนาดกริดให้เล็กลง */
     margin: 0 auto;
 }
 
 .product-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px);
 }
 
 .product-image {
     width: 100%;
-    height: 220px;
-    background-color: #f8f9fa;
+    height: 250px; /* ปรับขนาดภาพให้เล็กลง */
+    background-color: #f5f5f5;
     background-size: cover;
     background-position: center;
-    transition: opacity 0.3s ease;
-}
-
-.product-card:hover .product-image {
-    opacity: 0.9;
 }
 
 .product-details {
-    padding: 18px;
-    text-align: center;
+    padding: 15px;
 }
 
 .product-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1rem; /* ปรับขนาดข้อความให้เล็กลง */
+    margin: 0 0 10px 0;
     color: #333;
-    font-weight: bold;
 }
 
 .product-price {
-    font-size: 1.4rem;
-    color: #ff5722; 
+    font-size: 1.1rem; /* ปรับขนาดราคาสินค้า */
+    color: #007bff;
     font-weight: bold;
 }
 
 .product-action {
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* ปรับระยะห่าง */
 }
 
 .add-to-cart {
-    background: linear-gradient(135deg, #ff9800, #ff5722); 
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
+    padding: 6px 12px; /* ปรับขนาดปุ่ม */
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .add-to-cart:hover {
-    background: linear-gradient(135deg, #ff5722, #e64a19);
+    background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-    
-    .product-title {
-        font-size: 1rem;
-    }
-
-    .product-price {
-        font-size: 1.2rem;
-    }
-
-    .add-to-cart {
-        font-size: 0.9rem;
-        padding: 8px 14px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* ปรับขนาดให้เล็กลงในหน้าจอขนาดเล็ก */
     }
 }
-
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![image](https://github.com/user-attachments/assets/bc0c16f0-ffdb-44ba-8f12-9bb9ff285b44)
+]
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
