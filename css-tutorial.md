@@ -1,4 +1,4 @@
-# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
+![image](https://github.com/user-attachments/assets/ac3d3a8c-62a2-4152-bed3-9535960a9d55)# ใบงานการทดลอง: พื้นฐานการจัดการรูปแบบเว็บไซต์ด้วย CSS
 [](#การทดลองที่-1-ทำความรู้จักกับ-css)
 ## การทดลองที่ 1: ทำความรู้จักกับ CSS
 
@@ -393,7 +393,66 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/ff.png" alt="กุหลาบแดง">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">กุหลาบแดง</h2>
+                <p class="product-price">฿50</p>
+                <p class="product-description">สื่อถึงความรักและความโรแมนติก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/dd.png" alt="ทิวลิป">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">ทิวลิป</h2>
+                <p class="product-price">฿60</p>
+                <p class="product-description">สื่อถึงความสง่างามและความสุข</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/ee.png" alt="ลิลลี่">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">ลิลลี่</h2>
+                <p class="product-price">฿55</p>
+                <p class="product-description">สื่อถึงความบริสุทธิ์และความสงบ</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/cc.png" alt="ทานตะวัน">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">ทานตะวัน</h2>
+                <p class="product-price">฿45</p>
+                <p class="product-description">สื่อถึงความเข้มแข็งและพลังบวก</p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
 ```
 ```css
 body {
@@ -476,8 +535,10 @@ body {
 .product-button:hover {
     background: linear-gradient(to right, #ff5e62, #ff9966);
 }
+
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![image](https://github.com/user-attachments/assets/7bbca38e-3361-4834-afcf-28075781e907)
+]
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
