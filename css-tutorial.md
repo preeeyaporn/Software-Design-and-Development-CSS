@@ -396,7 +396,86 @@ background-size: cover;
 [วางโค้ด HTML ที่นี่]
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+body {
+    text-align: center; 
+    background-color: #fffcf5; 
+    font-family: 'Arial', sans-serif;
+}
+.product-card {
+    display: inline-block; 
+    width: 260px; 
+    margin: 15px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #fff;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #d63384; 
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-price {
+    color: #ff6f61; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #ff758c, #ff7eb3); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.product-button:hover {
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
@@ -932,7 +1011,100 @@ blockquote {
 [วางโค้ด HTML ที่นี่]
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    opacity: 0.9;
+}
+
+.product-details {
+    padding: 18px;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    color: #ff5722; 
+    font-weight: bold;
+}
+
+.product-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.add-to-cart {
+    background: linear-gradient(135deg, #ff9800, #ff5722); 
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #ff5722, #e64a19);
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .product-title {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    .add-to-cart {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
