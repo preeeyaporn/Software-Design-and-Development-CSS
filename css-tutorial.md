@@ -248,7 +248,7 @@ div > p {
     </nav>
 </body>
 </html>
-CSS
+``````css
 nav {
     background-color: #00ffc8;
     padding: 15px;
@@ -286,6 +286,7 @@ nav > ul > li {
     background-color: #007bff;
     border-radius: 3px;
 }
+
 ```
 [![image](https://github.com/user-attachments/assets/17e1a9d2-5796-41a7-a1ea-8c3ad1afa22b)
 ]
@@ -393,6 +394,8 @@ background-size: cover;
 ### ผลการทดลอง
 ```html
 [วางโค้ดที่นี่]
+``````css
+[วางโค้ด CSS ที่นี่]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
@@ -490,12 +493,85 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+.stats-container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    gap: 20px; 
+}
+
+.stat-box {
+    flex: 1;
+    padding: 2.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%;
+        margin: 1rem 0;
+    }
+}
+
 ```
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![image](https://github.com/user-attachments/assets/fcc82052-6e84-47b1-b788-db29c9c83a24)
+]
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
